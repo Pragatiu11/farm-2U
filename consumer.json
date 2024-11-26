@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":"CARROT",
+        "price": 200,
+        "image": "carrot.jpg"
+    },
+    {
+        "id": 2,
+        "name":" CAPSICUM",
+        "price": 250,
+        "image": "capsicum.jpg"
+    },
+    {
+        "id": 3,
+        "name":" POTATO",
+        "price": 290,
+        "image": "potato.jpg"
+    },
+    {
+        "id": 4,
+        "name":" BEETROOT",
+        "price": 200,
+        "image": "beetroot.jpg"
+    },
+    {
+        "id": 5,
+        "name":" APPLE",
+        "price": 300,
+        "image": "apple.jpg"
+    },
+    {
+        "id": 6,
+        "name":" BANANA",
+        "price": 200,
+        "image": "banana.jpg"
+    },
+    {
+        "id": 7,
+        "name":" STRAWBBERRY",
+        "price": 200,
+        "image": "strawberry.jpg"
+    },
+    {
+        "id": 8,
+        "name":" PINEAPPLE",
+        "price": 200,
+        "image": "pineapple.jpg"
+    }
+
+]

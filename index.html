@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARM2U</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('grass.jpg') no-repeat center center/cover;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .content img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 20px;
+        }
+
+        .text {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .text h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to FARM2U</h1>
+        <a href="login.html" class="button">Login</a>
+    </div>
+
+    <div class="content">
+        <div class="text">
+            <h2>About Farm2U</h2>
+            <p>Farm2U is a platform that bridges the gap between farmers and consumers, creating a direct connection. It ensures farmers get better profits for their hard work while offering fresh, quality produce to consumers at fair prices.</p>
+        </div>
+        <img src="him.jpg" alt="Farm Image">
+        <div class="text">
+            <p>With Farm2U, we aim to revolutionize the agricultural market by eliminating middlemen, promoting transparency, and enhancing sustainability in farming practices. Join us in making a difference for both farmers and consumers!</p>
+        </div>
+    </div>
+</body>
+</html>

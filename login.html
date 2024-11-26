@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FARM2U</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        #loginSuccess {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <input type="text" id="username" placeholder="Username" required><br><br>
+            <input type="password" id="password" placeholder="Password" required><br><br>
+            <button type="submit" class="button">Login</button>
+        </form>
+
+        <div id="loginSuccess" class="hidden">
+            <p>You are logged in!</p>
+            <button onclick="showOptions()" class="button">Proceed</button>
+        </div>
+
+        <div id="options" class="hidden">
+            <button onclick="window.location.href='farmer.html'" class="button">Farmer</button>
+            <button onclick="window.location.href='consumer.html'" class="button">Consumer</button>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            // Simulate successful login (you can add validation here)
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            // Check if both username and password are provided
+            if (username && password) {
+                document.getElementById("loginForm").style.display = "none"; // Hide the login form
+                document.getElementById("loginSuccess").style.display = "block"; // Show the success message
+            } else {
+                alert("Please enter both username and password");
+            }
+        }
+
+        function showOptions() {
+            // Show the Farmer/Consumer options
+            document.getElementById("loginSuccess").style.display = "none";
+            document.getElementById("options").style.display = "block";
+        }
+    </script>
+</body>
+</html>
